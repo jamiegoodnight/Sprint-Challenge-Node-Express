@@ -9,4 +9,8 @@ server.use(express.json());
 server.use("/api/projects", projectsRouter);
 server.use("/api/actions", actionsRouter);
 
+server.get("/", (req, res) => {
+  res.send(console.log("server restart"));
+});
+
 module.exports = server;
