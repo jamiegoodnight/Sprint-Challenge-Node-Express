@@ -1,6 +1,6 @@
 - [ ] Mention two parts of Express that you learned about this week.
 
-Express is like react for the back-end—a framework that sits ontop of node.js that extends functionality. Two examples of what it can offer are routers and middleware.
+Express is like react for the back-end—a framework that sits ontop of node.js that extends its functionality. Two examples of what it can offer are routers and middleware.
 
 - [ ] Describe Middleware?
 
