@@ -32,11 +32,9 @@ router.post("/", (req, res) => {
           .json({ message: "there was an error saving your project" });
       });
   } else {
-    res
-      .status(400)
-      .json({
-        message: "please provide a name and description for your project"
-      });
+    res.status(400).json({
+      message: "please provide a name and description for your project"
+    });
   }
 });
 
@@ -82,17 +80,15 @@ router.put("/:id", (req, res) => {
           .json({ message: "the project information could not be modified" });
       });
   } else {
-    res
-      .status(400)
-      .json({
-        message: "please provide a name and description for this project"
-      });
+    res.status(400).json({
+      message: "please provide a name and description for this project"
+    });
   }
 });
 
 // GET actions for a project object with a specified id ----------
 
-router.get("/:id/posts", (req, res) => {
+router.get("/:id/actions", (req, res) => {
   const id = req.params.id;
 
   db.getProjectActions(id)
