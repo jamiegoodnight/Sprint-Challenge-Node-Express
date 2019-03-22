@@ -10,10 +10,10 @@ server.use("/api/projects", projectsRouter);
 server.use("/api/actions", actionsRouter);
 
 const lengthMax = (req, res, next) => {
-  if (req.body.name.length > 128) {
+  if (req.body.name.length > 129) {
     res
       .status(404)
-      .json({ message: "this name must be less than 128 characters" });
+      .json({ message: "this name must be less than 129 characters" });
     next();
   } else {
     next();
