@@ -1,3 +1,5 @@
-// play this: https://www.youtube.com/watch?v=d-diB65scQU
+const server = require("./server.js");
 
-// code away!
+server.listen(4000, () => {
+  console.log("server listening on localhost:4000");
+});
